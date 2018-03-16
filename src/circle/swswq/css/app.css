@@ -1,0 +1,61 @@
+@import 'var.css';
+:root {
+	--flow-label-addon-size: 24px;
+}
+
+
+/*index  banner S*/
+
+.index_head {
+	background-image: url(../assets/index-bg@2x.jpg);
+	background-color: #fff;
+}
+
+.banner-index--height {
+	height: 2.2rem;
+}
+
+.column-wrap {
+	& .column-item .column-href .column-icon {
+		width: 0.9rem;
+		height: 0.9rem;
+	}
+}
+.column-wrap .column-icon .column-hot {
+	right: -0.1rem;
+}
+
+/* 信息流右边 label */
+
+body .tag.dynamic_item-label {
+	position: relative;
+	border-radius: .1rem;
+	padding-left: .4rem;
+	background-color: #20b791;
+	&:after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -3px;
+		width: var(--flow-label-addon-size);
+		height: var(--flow-label-addon-size);
+		background: url(../assets/tag_label@2x.png) no-repeat center;
+		background-size: 0.45rem;
+	}
+}
+
+
+/*个人主页 S*/
+
+.user-homepage .user-cover {
+	background-image: url(../assets/home-bg@2x.jpg);
+}
+
+/*column icon*/
+.column-item .icon-activity { background-image: url(../assets/column/icon-activity.png) }
+.column-item .icon-book { background-image: url(../assets/column/icon-book.png) }
+.column-item .icon-new { background-image: url(../assets/column/icon-new.png) }
+.column-item .icon-old { background-image: url(../assets/column/icon-old.png) }
+.column-item .icon-recommend { background-image: url(../assets/column/icon-recommend.png) }
+.column-item .icon-story { background-image: url(../assets/column/icon-story.png) }
+.column-item .icon-study { background-image: url(../assets/column/icon-study.png) }

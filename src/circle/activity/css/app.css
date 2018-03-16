@@ -1,0 +1,9 @@
+@import 'var.css';
+html,
+body {
+    background: #fff;
+}
+
+.dialog-message:only-child {
+    padding: 0 .2rem;
+}

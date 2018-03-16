@@ -1,0 +1,112 @@
+@import 'var.css';
+
+:root {
+	--flow-label-addon-size: 24px;
+}
+
+.index_head {
+	background: url(../assets/index-bg@2x.jpg) top center no-repeat;
+	background-size: cover;
+	& .swiper-container {
+		background: transparent;
+		border-bottom: 0;
+	}
+
+	& .column-wrap {
+		padding-bottom: 0.6rem;
+	}
+
+	& .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
+		background: transparent;
+		border: 1px solid var(--assist-color);
+		box-shadow: 0 0 0.1rem 0.02rem #276c84;
+
+		&.swiper-pagination-bullet-active {
+			background: #fff;
+			border: none;
+		}
+	}
+}
+.banner-index--height {
+	height: 2.1rem;
+}
+.column-wrap .column-item .column-href .column-icon {
+	width: 0.85rem;
+	height: 0.85rem;
+	margin-bottom: 0.1rem;
+}
+.column-wrap .column-item .column-href .column-text {
+	color: #fff;
+	text-shadow: 0 0 5px var(--assist-color);
+}
+
+/* 信息流右边 label */
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius:.2rem;
+	padding-left: .35rem;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -3px;
+		width: var(--flow-label-addon-size);
+		height: var(--flow-label-addon-size);
+		background: url(../assets/yx-tag@2x.png) no-repeat center;
+		background-size: 0.44rem;
+	}
+}
+
+/* 游戏玩家圈个人主页 获赞排行榜 头像背景*/
+.rank-header .y_card,.user-homepage .y_card {
+
+	& .y_avatar.y_card-img__large {
+		width: 1.67rem;
+		height: 1.34rem;
+		min-width: 1.67rem;
+		min-height: 1.34rem;
+		background: url(../assets/ranking_photo_bg@2x.png) no-repeat center center;
+		background-size: contain;
+		text-align: center;
+		position: relative;
+
+		&:after {
+		    content: "";
+			position: absolute;
+			width: .3rem;
+			height: .3rem;
+			background: url(../assets/diamonds_icon@2x.png) no-repeat center center;
+			background-size: contain;
+			bottom: -.1rem;
+			left: 50%;
+			margin-left: -.15rem;
+		}
+
+		& .y_avatar-img {
+			width: 1.16rem;
+			height: 1.16rem;
+			overflow: hidden;
+			margin: .08rem auto 0; 
+		}
+	}
+}
+/*个人主页 S*/
+.user-homepage .user-cover {
+	background-image: url(../assets/user_top_bg@2x.png);
+}
+
+/*column icon background*/
+.column-item .icon-dai { background-image: url(../assets/column/icon-dai.png); }
+.column-item .icon-girl { background-image: url(../assets/column/icon-girl.png); }
+.column-item .icon-network { background-image: url(../assets/column/icon-network.png); }
+.column-item .icon-question { background-image: url(../assets/column/icon-question.png); }
+.column-item .icon-ranking { background-image: url(../assets/column/icon-ranking.png); }
+.column-item .icon-round { background-image: url(../assets/column/icon-round.png); }
+.column-item .icon-shouyou { background-image: url(../assets/column/icon-shouyou.png); }
+.column-item .icon-standalone { background-image: url(../assets/column/icon-standalone.png); }
+.column-item .icon-tuchao { background-image: url(../assets/column/icon-tuchao.png); }
+.column-item .icon-tuijian { background-image: url(../assets/column/icon-tuijian.png); }
+.column-item .icon-vr {background-image: url(../assets/column/icon-vr.png)}
+.column-item .icon-webpage {background-image: url(../assets/column/icon-webpage.png)}
+.column-item .icon-zhubo {background-image: url(../assets/column/icon-zhubo.png)}

@@ -1,0 +1,61 @@
+@import 'var.css';
+
+:root {
+	--flow-label-addon-size: 31px;
+}
+
+/*index  banner S*/
+.index_head {
+	background-image: url(../assets/index-bg@2x.jpg);
+	background-color: #fff;
+}
+
+.banner-index--height {
+	height: 2.54rem;
+}
+
+.column-wrap {
+	padding: 0.28rem 0 0.5rem 0;
+	& .column-item .column-href .column-icon{
+		width: 0.58rem;
+		height: 0.45rem;
+	}
+}
+
+/* 信息流右边 label */
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius: .1rem;
+	padding-left: .4rem;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -5px;
+		width: var(--flow-label-addon-size);
+		height: calc(var(--flow-label-addon-size)-3);
+		background: url(../assets/icon_tag.png) no-repeat center;
+		background-size: 0.62rem 0.55rem;
+	}
+}
+
+
+/*个人主页 S*/
+.user-homepage .user-cover {
+	background-image: url(../assets/home-bg@2x.jpg);
+}
+
+/*column icon*/
+.column-item .icon-basketball { background-image: url(../assets/column/icon-basketball.png) }
+.column-item .icon-ballpark { background-image: url(../assets/column/icon-ballpark.png) }
+.column-item .icon-bike { background-image: url(../assets/column/icon-bike.png) }
+.column-item .icon-equipment { background-image: url(../assets/column/icon-equipment.png) }
+.column-item .icon-football { background-image: url(../assets/column/icon-football.png) }
+.column-item .icon-kettle { background-image: url(../assets/column/icon-kettle.png) }
+.column-item .icon-medicine { background-image: url(../assets/column/icon-medicine.png) }
+.column-item .icon-muscle { background-image: url(../assets/column/icon-muscle.png) }
+.column-item .icon-podium { background-image: url(../assets/column/icon-podium.png) }
+.column-item .icon-runningshoes { background-image: url(../assets/column/icon-runningshoes.png) }
+.column-item .icon-swim { background-image: url(../assets/column/icon-swim.png) }
+.column-item .icon-tennis { background-image: url(../assets/column/icon-tennis.png) }

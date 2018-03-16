@@ -1,0 +1,71 @@
+@import 'var.css';
+:root {
+	--flow-label-addon-size: 21px;
+}
+
+
+/*index  banner S*/
+
+.index_head {
+	background-image: url(../assets/index-bg@2x.jpg);
+	background-color: #fff;
+}
+
+.banner-index--height {
+	height: 2.84rem;
+}
+
+.column-wrap {
+	& .column-item .column-href .column-icon {
+		width: 0.46rem;
+		height: 0.46rem;
+	}
+}
+
+
+/* 信息流右边 label */
+
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius: .1rem;
+	padding-left: .4rem;
+	&:after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -6px;
+		width: var(--flow-label-addon-size);
+		height: calc(var(--flow-label-addon-size)-3);
+		background: url(../assets/label.png) no-repeat center;
+		background-size: 0.44rem 0.42rem;
+	}
+}
+
+
+/*个人主页 S*/
+
+.user-homepage .user-cover {
+	background-image: url(../assets/info-headerbg@2x.jpg);
+}
+
+/*column icon*/
+.column-item .icon-baike { background-image: url(../assets/column/icon-baike.png); }
+.column-item .icon-breeding { background-image: url(../assets/column/icon-breeding.png); }
+.column-item .icon-cat { background-image: url(../assets/column/icon-cat.png); }
+/*.column-item .icon-cat-dog01 { background-image: url(../assets/column/icon-cat-dog01.png); }*/
+.column-item .icon-cat-dog { background-image: url(../assets/column/icon-cat-dog.png); }
+.column-item .icon-dog { background-image: url(../assets/column/icon-dog.png); }
+.column-item .icon-exchange { background-image: url(../assets/column/icon-exchange.png); }
+/*.column-item .icon-my { background-image: url(../assets/column/icon-my.png); }*/
+.column-item .icon-other { background-image: url(../assets/column/icon-other.png); }
+.column-item .icon-othersy { background-image: url(../assets/column/icon-othersy.png); }
+.column-item .icon-wd { background-image: url(../assets/column/icon-wd.png); }
+.column-item .icon-yl { background-image: url(../assets/column/icon-yl.png); }
+.column-item .icon-activity { background-image: url(../assets/column/icon-activity.png); }
+.column-item .icon-commodity { background-image: url(../assets/column/icon-commodity.png); }
+.column-item .icon-da { background-image: url(../assets/column/icon-da.png); }
+.column-item .icon-market { background-image: url(../assets/column/icon-market.png); }
+.column-item .icon-question { background-image: url(../assets/column/icon-question.png); }
+.column-item .icon-server { background-image: url(../assets/column/icon-server.png); }
+.column-item .icon-video { background-image: url(../assets/column/icon-video.png); }
+

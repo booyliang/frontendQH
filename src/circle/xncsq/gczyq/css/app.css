@@ -1,0 +1,60 @@
+@import 'var.css';
+:root {
+	--flow-label-addon-size: 23px;
+}
+
+
+/*index  banner S*/
+
+.index_head {
+	background-image: url(../assets/index-bg@2x.jpg);
+	background-color: #fff;
+}
+
+.banner-index--height {
+	height: 2.74rem;
+}
+
+.column-wrap {
+	& .column-item .column-href .column-icon {
+		width: 0.52rem;
+		height: 0.5rem;
+		margin-bottom: 5px;
+	}
+}
+
+
+/* 信息流右边 label */
+
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius: .2rem;
+	padding-left: .4rem;
+	background: var(--active-color);
+	&:after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -2px;
+		width: var(--flow-label-addon-size);
+		height: var(--flow-label-addon-size);
+		background: url(../assets/icon-tag@2x.png) no-repeat center;
+		background-size: contain;
+	}
+}
+
+
+/*个人主页 S*/
+
+.user-homepage .user-cover {
+	background-image: url(../assets/home-page@2x.jpg);
+}
+
+/*column icon*/
+.column-item .icon-book { background-image: url(../assets/column/icon-book.png) }
+.column-item .icon-bowl { background-image: url(../assets/column/icon-bowl.png) }
+.column-item .icon-lamp { background-image: url(../assets/column/icon-lamp.png) }
+.column-item .icon-message { background-image: url(../assets/column/icon-message.png) }
+.column-item .icon-teapot { background-image: url(../assets/column/icon-teapot.png) }
+.column-item .icon-tree { background-image: url(../assets/column/icon-tree.png) }
+.column-item .icon-users { background-image: url(../assets/column/icon-users.png) }

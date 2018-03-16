@@ -1,0 +1,148 @@
+@import "#/css/var.css";
+@import "reset.css";
+@import "iconfont.css";
+@import "style.css";
+
+
+
+body {
+	font-size: var(--default-font-size);
+	line-height: var(--default-line-height);
+	color: var(--text-primary-color);
+	background: var(--bg-color);
+	word-break: break-all;
+	font-family: "pingfang sc", system-ui, Helvetica Neue,Helvetica,Roboto,Segoe UI,Arial,sans-serif;
+}
+
+img {
+	object-fit: cover;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+.layout {
+	@apply --layout;
+}
+
+.disabled {
+	pointer-events: none;
+}
+
+.image--responsive {
+	position: relative;
+
+	& > img {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.unshelved {
+	position: relative;
+
+	&::after {
+		@apply --full;
+		content: "";
+		background: url(../assets/sold-out@2x.png) no-repeat right var(--layout-space) top 0.4rem color(white alpha(0.618));
+		background-size: 2.25rem 1.83rem;
+	}
+}
+
+
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes down-10 {
+	0% {
+		transform: translate(0, -10%);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+/*发布按钮*/
+.add_idea, .publish-button {
+	display: block;
+	position: fixed;
+	bottom: 0.4rem;
+	right: 0.4rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	z-index: 1;
+	width: 1.12rem;
+	height: 1.2rem;
+	background-image: url(../assets/release@2x.png);
+	background-color: transparent;
+
+	&:active {
+		background: transparent;
+	}
+}
+
+.body--white{
+	background: #fff;
+	min-height: 100vh;
+}
+
+.icon {
+	width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+.action_menu {
+	& .menu-list {
+		right: 0.55rem;
+		top: 100%;
+		width: 6rem;
+		font-size: 0.32rem;
+		line-height: 3.125;
+		color: var(--theme-color);
+		background: white;
+		border-radius: 0.5em;
+		border-top-right-radius: 0;
+		margin-top: 0;
+		transform-origin: 100% -0.3rem;
+
+		&::before {
+			right: 0;
+			margin-bottom: -1px;
+			border: none;
+			width: 0.6rem;
+			height: 0.3rem;
+			background: radial-gradient(at left top, transparent 71%, white 0%);
+		}
+	}
+	& .menu-item {
+		justify-content: center;
+
+		&:nth-child(n+2) {
+			@apply --border-top;
+		}
+	}
+	
+}
+
+.fade-out-leave-active {
+	transition: .5s;
+}
+.fade-out-leave-to {
+	opacity: 0;
+}

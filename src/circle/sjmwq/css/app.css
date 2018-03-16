@@ -1,0 +1,58 @@
+@import 'var.css';
+
+:root {
+	--flow-label-addon-size: 24px;
+}
+
+/*index  banner S*/
+.index_head {
+	background-image: url(../assets/index-bg@2x.jpg);
+}
+
+.banner-index--height {
+	height: 2.03rem;
+}
+
+.column-wrap {
+	padding-top: 0.4rem;
+
+	& .column-item .column-href .column-icon{
+		width: 0.5rem;
+		height: 0.5rem;
+	}
+}
+
+/* 信息流右边 label */
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius:.2rem;
+	padding-left: .35rem;
+
+	&:after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -3px;
+		width: var(--flow-label-addon-size);
+		height: var(--flow-label-addon-size);
+		background: url(../assets/icon-tag@2x.png) no-repeat center;
+		background-size: 0.47rem;
+	}
+}
+
+
+/*个人主页 S*/
+.user-homepage .user-cover {
+	background-image: url(../assets/home-bg@2x.jpg);
+}
+
+
+/*column icon*/
+.column-item .icon-slcp { background-image: url(../assets/column/icon-slcp.png) }
+.column-item .icon-active { background-image: url(../assets/column/icon-active.png) }
+.column-item .icon-culture { background-image: url(../assets/column/icon-culture.png) }
+.column-item .icon-food { background-image: url(../assets/column/icon-food.png) }
+.column-item .icon-msyj { background-image: url(../assets/column/icon-msyj.png) }
+.column-item .icon-question { background-image: url(../assets/column/icon-question.png) }
+.column-item .icon-shop { background-image: url(../assets/column/icon-shop.png) }
+.column-item .icon-show { background-image: url(../assets/column/icon-show.png) }

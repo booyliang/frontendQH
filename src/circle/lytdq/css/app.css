@@ -1,0 +1,98 @@
+@import "var.css";
+:root {
+	--flow-label-addon-size: 23px;
+}
+
+.column-wrap {
+	/*padding-top: 0.4rem;*/
+
+	& .column-item .column-href .column-icon{
+		width: 0.7rem;
+		height: 0.7rem;
+	}
+}
+
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius:.1rem;
+	padding-left: .35rem;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -2px;
+		width: var(--flow-label-addon-size);
+		height: calc(var(--flow-label-addon-size)-3);
+		background: url(../assets/trees-1@2x.png) no-repeat;
+		background-size: 23px;
+	}
+
+}
+
+.index_head {
+	background-image: url(../assets/index-bg@2x.png);
+}
+.banner-index--height {
+	height: 2.1rem;
+}
+
+.user-homepage .user-cover {
+	height: 4.04rem;
+	background-image: url(../assets/user-cover@2x.jpg);
+	background-color: #5ebaff;
+	margin-bottom: -0.3rem;
+}
+
+.check_group--tag {
+	display: flex;
+	flex-wrap: wrap;
+	color: var(--text-assist-color);
+
+	& .check_item {
+		@apply --margin-bottom;
+		flex: none;
+		width: 30.4%;
+		text-align: center;
+		border-bottom: none;
+		background: white;
+		border-radius: 0.1rem;
+
+		&:not(:nth-child(3n+1)) {
+			margin-left: 4.4%;
+		}
+
+		& .iconfont {
+			display: none;
+		}
+
+		&.checked {
+			color: white;
+			background: var(--theme-color);
+		}
+	}
+}
+
+
+
+.empty_message {
+	display: none;
+}
+
+/* TODO: fix logic error. */
+.empty,
+.place_list:empty {
+	& ~ .empty_message {
+		display: block;
+	}
+}
+
+/*column icon*/
+.column-item .icon-activity { background-image: url(../assets/column/icon-activity.png) }
+.column-item .icon-book { background-image: url(../assets/column/icon-book.png) }
+.column-item .icon-food { background-image: url(../assets/column/icon-food.png) }
+.column-item .icon-photography { background-image: url(../assets/column/icon-photography.png) }
+.column-item .icon-question { background-image: url(../assets/column/icon-question.png) }
+.column-item .icon-sell { background-image: url(../assets/column/icon-sell.png) }
+.column-item .icon-talk { background-image: url(../assets/column/icon-talk.png) }
+.column-item .icon-write { background-image: url(../assets/column/icon-write.png) }

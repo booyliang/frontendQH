@@ -1,0 +1,58 @@
+@import 'var.css';
+:root {
+	--flow-label-addon-size: 32px;
+}
+
+
+/*index  banner S*/
+
+.index_head {
+	background-image: url(../assets/index-bg@2x.png);
+	background-color: #fff;
+}
+
+.banner-index--height {
+	height: 2.84rem;
+}
+
+.column-wrap {
+	& .column-item .column-href .column-icon {
+		width: 0.6rem;
+		height: 0.6rem;
+	}
+}
+
+
+/* 信息流右边 label */
+
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius: .1rem;
+	padding-left: .4rem;
+	&:after {
+		content: "";
+		position: absolute;
+		left: calc(-var(--flow-label-addon-size) / 2);
+		top: -6px;
+		width: var(--flow-label-addon-size);
+		height: calc(var(--flow-label-addon-size)-3);
+		background: url(../assets/jkys-tag@2x.png) no-repeat center;
+		background-size: 0.44rem 0.44rem;
+	}
+}
+
+
+/*个人主页 S*/
+
+.user-homepage .user-cover {
+	background-image: url(../assets/info-headbg@2x.png);
+}
+
+/*column icon*/
+.column-item .icon-active { background-image: url(../assets/column/icon-active.png) }
+.column-item .icon-baike { background-image: url(../assets/column/icon-baike.png) }
+.column-item .icon-choose { background-image: url(../assets/column/icon-choose.png) }
+.column-item .icon-consulting { background-image: url(../assets/column/icon-consulting.png) }
+.column-item .icon-learn { background-image: url(../assets/column/icon-learn.png) }
+.column-item .icon-node { background-image: url(../assets/column/icon-node.png) }
+.column-item .icon-weighttest { background-image: url(../assets/column/icon-weighttest.png) }

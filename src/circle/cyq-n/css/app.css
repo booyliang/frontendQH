@@ -1,0 +1,54 @@
+	@import 'var.css';
+	:root {
+		--flow-label-addon-size: 4px;
+	}
+	/*index  banner S*/
+
+	.index_head {
+		background-image: url(../assets/index-bg@2x.png);
+		background-color: #fff;
+	}
+
+	.banner-index--height {
+		height: 2.84rem;
+	}
+
+	.column-wrap {
+		& .column-item .column-href .column-icon {
+			width: 0.46rem;
+			height: 0.46rem;
+		}
+	}
+	/* 信息流右边 label */
+
+	.tag.dynamic_item-label {
+		position: relative;
+		border-radius: .1rem;
+		padding-left: .4rem;
+		background-color: #83dbff;
+		&:after {
+			content: "";
+			width: 0.71rem;
+            height: 0.08rem;
+			background: url(../assets/cy_class_bg@2x.png) no-repeat center;
+			background-size: 0.71rem 0.08rem;
+	        position: absolute;
+	        left: 50%;
+	        bottom: -0.08rem;
+	        margin-left: -0.355rem;
+		}
+	}
+	/*个人主页 S*/
+
+	.user-homepage .user-cover {
+		background-image: url(../assets/header-bg01@2x.png);
+	}
+
+/*column icon*/
+.column-item .icon-baike { background-image: url(../assets/column/icon-baike.png) }
+.column-item .icon-investors { background-image: url(../assets/column/icon-investors.png) }
+.column-item .icon-partner { background-image: url(../assets/column/icon-partner.png) }
+.column-item .icon-point { background-image: url(../assets/column/icon-point.png) }
+.column-item .icon-project { background-image: url(../assets/column/icon-project.png) }
+.column-item .icon-question { background-image: url(../assets/column/icon-question.png) }
+.column-item .icon-badge { background-image: url(../assets/column/icon-badge.png) }

@@ -1,0 +1,67 @@
+@import 'var.css';
+
+:root {
+	--flow-label-addon-size: 24px;
+}
+
+/*index S*/
+.index_head{
+	background-image: url(../assets/index-bg@2x.jpg);
+	background-color: #593527;
+	background-size: cover;
+	padding-bottom: 0.2rem;
+}
+
+.banner-index--height {
+	height: 2.3rem;
+}
+
+.column-wrap {
+	padding-bottom: 0;
+
+	& .column-item .column-href {
+		color: #ffeca9;
+		& .column-icon {
+			width: 0.48rem;
+			height: 0.48rem;
+		}
+	}
+}
+
+.index_head .swiper-container {
+	background-color: transparent;
+	border-bottom: 0;
+}
+
+/* 信息流右边 label */
+.tag.dynamic_item-label {
+	position: relative;
+	border-radius:.2rem;
+	padding-left: .35rem;
+
+	&:after {
+	content: "";
+	position: absolute;
+	left: calc(-var(--flow-label-addon-size) / 2);
+	top: -3px;
+	width: var(--flow-label-addon-size);
+	height: var(--flow-label-addon-size);
+	background: url(../assets/icon-tag@2x.png) no-repeat center;
+	background-size: 0.47rem;
+	}
+}
+
+/*个人主页 S*/
+.user-homepage .user-cover {
+	background-image: url(../assets/home-bg@2x.jpg);
+}
+
+/*column icon*/
+.column-item .icon-active { background-image: url(../assets/column/icon-active.png) }
+.column-item .icon-camera { background-image: url(../assets/column/icon-camera.png) }
+.column-item .icon-focus { background-image: url(../assets/column/icon-focus.png) }
+.column-item .icon-kinetograph { background-image: url(../assets/column/icon-kinetograph.png) }
+.column-item .icon-photo { background-image: url(../assets/column/icon-photo.png) }
+.column-item .icon-zlss { background-image: url(../assets/column/icon-zlss.png) }
+.column-item .icon-question { background-image: url(../assets/column/icon-question.png) }
+.column-item .icon-shop { background-image: url(../assets/column/icon-shop.png) }
